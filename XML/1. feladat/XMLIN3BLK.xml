@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IN3BLK_Foglalas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XMLSchemaIN3BLK.xsd">
+
+    <!-- Szobák -->
+    <Szoba sz_kod="1">
+        <Emelet>2</Emelet>
+        <Ar>36000</Ar>
+        <Szabad>Szabad</Szabad>
+    </Szoba>
+
+    <Szoba sz_kod="2">
+        <Emelet>5</Emelet>
+        <Ar>43000</Ar>
+        <Szabad>Szabad</Szabad>
+    </Szoba>
+
+    <Szoba sz_kod="3">
+        <Emelet>1</Emelet>
+        <Ar>31000</Ar>
+        <Szabad>Foglalt</Szabad>
+    </Szoba>
+
+    <!-- Alkalmazottak -->
+    <Alkalmazott a_kod="1" h_kod="1">
+        <Nev>Tóth András</Nev>
+        <Telefon>06-70-938-5617</Telefon>
+        <Ber>320000</Ber>
+        <Beosztas>Portás</Beosztas>
+    </Alkalmazott>
+
+    <Alkalmazott a_kod="2" h_kod="2">
+        <Nev>Lakatos Kevin</Nev>
+        <Telefon>06-30-294-7335</Telefon>
+        <Telefon>06-20-993-3744</Telefon>
+        <Ber>390000</Ber>
+        <Beosztas>Szakács</Beosztas>
+    </Alkalmazott>
+
+    <Alkalmazott a_kod="3" h_kod="3">
+        <Nev>Szabó Ilona</Nev>
+        <Telefon>06-70-223-9485</Telefon>
+        <Ber>280000</Ber>
+        <Beosztas>Takarító</Beosztas>
+    </Alkalmazott>
+
+    <!-- Hotelek -->
+    <Hotel h_kod="1" sz_kod="1">
+        <Nev>Kényelem Hotel</Nev>
+        <Telefon>06-20-993-7766</Telefon>
+        <Cim>
+            <Irszam>1028</Irszam>
+            <Varos>Budapest</Varos>
+            <Utca-hazszam>Szeles utca 25</Utca-hazszam>
+        </Cim>
+        <Ertekeles>3</Ertekeles>
+    </Hotel>
+
+    <Hotel h_kod="2" sz_kod="2">
+        <Nev>Royal Hotel</Nev>
+        <Telefon>06-70-234-3443</Telefon>
+        <Cim>
+            <Irszam>4033</Irszam>
+            <Varos>Debrecen</Varos>
+            <Utca-hazszam>Erdei utca 6</Utca-hazszam>
+        </Cim>
+        <Ertekeles>5</Ertekeles>
+    </Hotel>
+
+    <Hotel h_kod="3" sz_kod="3">
+        <Nev>Udvari Hotel</Nev>
+        <Telefon>06-30-345-2345</Telefon>
+        <Telefon>06-30-999-2384</Telefon>
+        <Cim>
+            <Irszam>3521</Irszam>
+            <Varos>Miskolc</Varos>
+            <Utca-hazszam>Jakab utca 56</Utca-hazszam>
+        </Cim>
+        <Ertekeles>4</Ertekeles>
+    </Hotel>
+
+    <!-- Számlák -->
+    <Szamla szam_kod="1" v_kod="1">
+        <Nev>Kiss Anna</Nev>
+        <Datum>2020-02-17</Datum>
+        <Osszeg>86000</Osszeg>
+    </Szamla>
+
+    <Szamla szam_kod="2" v_kod="2">
+        <Nev>Török András</Nev>
+        <Datum>2021-09-10</Datum>
+        <Osszeg>113000</Osszeg>
+    </Szamla>
+
+    <Szamla szam_kod="3" v_kod="3">
+        <Nev>Horváth Áron</Nev>
+        <Datum>2022-05-14</Datum>
+        <Osszeg>93000</Osszeg>
+    </Szamla>
+
+    <!-- Vevők -->
+    <Vevo v_kod="1" sz_kod="1">
+        <Nev>Kiss Anna</Nev>
+        <Telefon>06-30-222-2345</Telefon>
+        <Telefon>06-70-399-5577</Telefon>
+        <Email>kAnna@gmail.com</Email>
+    </Vevo>
+
+    <Vevo v_kod="2" sz_kod="2">
+        <Nev>Török András</Nev>
+        <Telefon>06-20-948-3857</Telefon>
+        <Telefon>06-30-9475872</Telefon>
+        <Email>tAndras@freemail.hu</Email>
+    </Vevo>
+
+    <Vevo v_kod="3" sz_kod="3">
+        <Nev>Horváth Áron</Nev>
+        <Telefon>06-70-993-6665</Telefon>
+        <Email>hAron@gmail.com</Email>
+    </Vevo>
+
+    <!-- Foglalások -->
+    <Foglalas sz_kod="1" v_kod="1">
+        <Kezdet>2020-02-10</Kezdet>
+        <Vege>2020-02-17</Vege>
+    </Foglalas>
+
+    <Foglalas sz_kod="2" v_kod="2">
+        <Kezdet>2021-09-03</Kezdet>
+        <Vege>2021-09-10</Vege>
+    </Foglalas>
+
+    <Foglalas sz_kod="3" v_kod="3">
+        <Kezdet>2022-05-10</Kezdet>
+        <Vege>2022-05-14</Vege>
+    </Foglalas>
+    
+    <!-- Fizetések -->
+    <Fizetes v_kod="1" szam_kod="1">
+        <Datum>2020-02-17</Datum>
+        <Fizetesmod>Készpénz</Fizetesmod>
+    </Fizetes>
+
+    <Fizetes v_kod="2" szam_kod="2">
+        <Datum>2021-09-10</Datum>
+        <Fizetesmod>Bankkártya</Fizetesmod>
+    </Fizetes>
+
+    <Fizetes v_kod="3" szam_kod="3">
+        <Datum>2022-05-14</Datum>
+        <Fizetesmod>Bankkártya</Fizetesmod>
+    </Fizetes>
+</IN3BLK_Foglalas>

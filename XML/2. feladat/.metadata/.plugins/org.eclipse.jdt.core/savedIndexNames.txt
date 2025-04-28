@@ -1,0 +1,4 @@
+INDEX VERSION 1.132+C:\Users\Thuun\Documents\Egyetem\V. félév\XML\Féléves feladat\XMLTaskIN3BLK\2. feladat\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3545824377.index
+4040311599.index

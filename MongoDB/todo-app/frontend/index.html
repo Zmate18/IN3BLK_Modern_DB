@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>To-do List</h1>
+
+      <div class="form-container">
+        <input type="text" id="taskTitle" placeholder="Task title" />
+        <input
+          type="text"
+          id="taskDescription"
+          placeholder="Task description"
+        />
+        <button onclick="addTask()">Add</button>
+      </div>
+
+      <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

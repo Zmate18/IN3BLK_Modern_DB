@@ -1,0 +1,44 @@
+package hu.domparse.IN3BLK;
+
+import javax.xml.parsers.*;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+
+import org.w3c.dom.*;
+import java.io.*;
+
+public class DomModifyIN3BLK {
+
+	public static void main(String[] args) {
+		try {
+			// XML fájl beolvasáss
+            File inputFile = new File("XMLIN3BLK.xml");
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(inputFile);
+            doc.getDocumentElement().normalize();
+            
+            // lekérjük egy adott típushoz tartozó összes elemet amit egy listában tárolunk el
+            NodeList alkalmazottList = doc.getElementsByTagName("Alkalmazott");
+            //lekérjük azt az elemet a listából amelyiket módosítani szeretnénk, itt index alapján történik a módosítás
+            Element alkalmazott = (Element) alkalmazottList.item(0);
+            //az elemnek megkeressük azt a tagjét amit módosítani szeretnénk, majd a tartlmát (content)-et beállítjuk a megfelelőre
+            alkalmazott.getElementsByTagName("Ber").item(0).setTextContent("400000");
+
+
+            
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = transformerFactory.newTransformer();
+            DOMSource source = new DOMSource(doc);
+            StreamResult consoleResult = new StreamResult(System.out);
+            transformer.transform(source, consoleResult);
+            
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+	}
+
+}
